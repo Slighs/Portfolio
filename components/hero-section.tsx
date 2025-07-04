@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -9,10 +9,12 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Full-Stack Developer <span className="text-primary">Building Modern Web Solutions</span>
+            Full-Stack Developer{" "}
+            <span className="text-primary">Building Modern Web Solutions</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I create responsive, user-friendly applications with clean code and modern technologies.
+            I create responsive, user-friendly applications with clean code and
+            modern technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
@@ -40,7 +42,7 @@ export default function HeroSection() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/slighs"
+              href="https://www.linkedin.com/in/abdullah-salah-b8b446223/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-muted rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -59,5 +61,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

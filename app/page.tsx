@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Laptop } from "lucide-react"
-import HeroSection from "@/components/hero-section"
-import ProjectCard from "@/components/project-card"
-import SkillBadge from "@/components/skill-badge"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Code, Laptop } from "lucide-react";
+import HeroSection from "@/components/hero-section";
+import ProjectCard from "@/components/project-card";
+import SkillBadge from "@/components/skill-badge";
 
 export default function Home() {
   return (
@@ -17,9 +17,10 @@ export default function Home() {
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-6">About Me</h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                I'm a full-stack developer currently studying Computer Science at Hogeschool Rotterdam. With a
-                background in Software Development from Grafisch Lyceum Rotterdam, I combine technical expertise with
-                practical experience.
+                I'm a full-stack developer currently studying Computer Science
+                at Hogeschool Rotterdam. With a background in Software
+                Development from Grafisch Lyceum Rotterdam, I combine technical
+                expertise with practical experience.
               </p>
               <Link href="/about">
                 <Button variant="outline" className="mt-4 group">
@@ -30,11 +31,26 @@ export default function Home() {
             </div>
             <div className="flex-1 grid grid-cols-2 gap-3">
               <SkillBadge icon={<Code className="h-4 w-4 mr-2" />} label="C#" />
-              <SkillBadge icon={<Code className="h-4 w-4 mr-2" />} label="JavaScript" />
-              <SkillBadge icon={<Code className="h-4 w-4 mr-2" />} label="TypeScript" />
-              <SkillBadge icon={<Code className="h-4 w-4 mr-2" />} label="Python" />
-              <SkillBadge icon={<Laptop className="h-4 w-4 mr-2" />} label="React" />
-              <SkillBadge icon={<Laptop className="h-4 w-4 mr-2" />} label=".NET" />
+              <SkillBadge
+                icon={<Code className="h-4 w-4 mr-2" />}
+                label="JavaScript"
+              />
+              <SkillBadge
+                icon={<Code className="h-4 w-4 mr-2" />}
+                label="TypeScript"
+              />
+              <SkillBadge
+                icon={<Code className="h-4 w-4 mr-2" />}
+                label="Python"
+              />
+              <SkillBadge
+                icon={<Laptop className="h-4 w-4 mr-2" />}
+                label="React"
+              />
+              <SkillBadge
+                icon={<Laptop className="h-4 w-4 mr-2" />}
+                label=".NET"
+              />
             </div>
           </div>
         </div>
@@ -43,7 +59,9 @@ export default function Home() {
       {/* Projects Section Preview */}
       <section className="py-16 px-4 md:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            Featured Projects
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectCard
               title="Cinema Reservation System"
@@ -72,10 +90,12 @@ export default function Home() {
       {/* Contact CTA */}
       <section className="py-16 px-4 md:px-6 lg:px-8 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-5xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Need a developer for your project?</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Need a developer for your project?
+          </h2>
           <p className="max-w-2xl mx-auto mb-8">
-            I'm available for freelance work and internship opportunities. Let's discuss how I can help bring your ideas
-            to life.
+            I'm available for freelance work and internship opportunities. Let's
+            discuss how I can help bring your ideas to life.
           </p>
           <Link href="/contact">
             <Button variant="secondary" size="lg" className="group">
@@ -86,5 +106,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
